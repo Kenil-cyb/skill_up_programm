@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Skill</title>
+    <link rel="stylesheet" href="add_skill.css">
+</head>
+<body>
+    <header>
+        <h1>Skill Sharing Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="add_skill.html" class="active">Add Skill</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="add-skill">
+            <h2>Add Your Skill</h2>
+            <p>Fill out the form below to share your skills with Us.</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="61f36c27-26c3-4d1c-8d13-a0b849f9b590">
+
+                <!-- Form Inputs -->
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="skill">Skill You Can Teach:</label>
+                    <input type="text" id="skill" name="skill" placeholder="Enter your skill" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number (10 digits only):</label>
+                    <input type="tel" pattern="[0-9]{10}" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Contact Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+
+                <!-- Spam Protection -->
+                <input type="checkbox" name="botcheck" style="display: none;">
+
+                <!-- Submit and Reset Buttons -->
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Skill Sharing Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

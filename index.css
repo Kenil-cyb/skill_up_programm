@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0f7fa;
+    background-image: url('https://www.transparenttextures.com/patterns/soft-pattern.png'); /* Add texture */
+    background-attachment: fixed;
+}
+
+header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease, bounceIn 1s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ffdd57; /* Color change on hover */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 1.5s ease;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-image: url('https://www.transparenttextures.com/patterns/coffee-lattice.png');
+    background-size: cover;
+    animation: fadeInUp 2s ease-out;
+}
+
+.intro h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #333;
+    animation: textSlideIn 1s ease;
+}
+
+.intro .buttons {
+    margin-top: 20px;
+}
+
+.intro .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro .button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: transparent; 
+    color: #333; /* Ensure text is visible */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes textSlideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
